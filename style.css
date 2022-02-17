@@ -2,47 +2,60 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    
 }
 body{
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(211, 207, 207);
+    background-color: rgb(167, 172, 177);
 }
-/*** formattazione header ***/
 header{
-    background-color: #dbe2d1;
-    height: 8vh;
+    background-color: rgb(202, 193, 193);
+    height: 10vh;
     text-align: center;
-    line-height: 75px;
-    
-    }
-
-    header > h1{
-        font-family: 'Tangerine', cursive;
-        font-size: 4.2rem;
-        color:rgb(97, 62, 68);
-    }
-header > h1:hover{
-    color:rgb(246, 27, 162);
-    cursor:pointer;
+    line-height: 80px;
+    vertical-align: middle;
+    font-family: cursive;
+    letter-spacing: 2px;
 }
 
-.container{
-    height: 800px;
-    margin:50px;
-    background-color: rgb(211, 219, 217);
-    
+.prodotti{
+    background-color: rgb(251, 249, 247);
+    width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
 }
-
-
-.product{
+.prodotto > img{
+    box-shadow:  0 0  10px rgb(114, 114, 114);
+}
+.prodotto{
     display:inline-block;
-    margin:50px;
     position:relative;
-    
+    margin: 1rem;
 }
 
-.sconto, .sostenibile{
+.rosso{
     position:absolute;
     bottom:0;
-    top:100px;
+    left:0;
+    background-color: red;
+    color:white;
+}
+
+.verde{
+    position:absolute;
+    left:50px;
+    bottom:0;
+    background-color: green;
+    color:white;
+}
+
+.cuore{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.cuore{
+    visibility: hidden;
+}
+
+.prodotto:hover .cuore{
+    visibility: visible;
+}
