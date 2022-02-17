@@ -17,6 +17,7 @@ header{
 }
 
 .prodotti{
+    
     background-color: rgb(251, 249, 247);
     width: 1200px;
     margin: 2rem auto;
@@ -58,4 +59,8 @@ header{
 
 .prodotto:hover .cuore{
     visibility: visible;
+}
+
+footer{
+    text-align: center;
 }
